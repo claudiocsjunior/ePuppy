@@ -22,12 +22,10 @@
             <?php echo $this->Html->link('Edit', array('action' => 'edit', $owner['Owner']['id']));?>
         </td>
         <td>
-          <?php
-            echo $this->Form->postLink(
-                'Delete',
-                array('action' => 'delete', $owner['Owner']['id']),
-                array('confirm' => 'Are you sure?')
-            );
+          <?php echo $this->Html->link(
+            'Delete',
+            array('action' => 'delete', $owner['Owner']['id']),
+            array('confirm' => 'Are you sure?'));
         ?>
         </td>
     </tr>
